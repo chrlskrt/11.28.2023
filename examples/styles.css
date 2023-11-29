@@ -70,7 +70,7 @@ h1 {
   margin: 0;
 }
 
-.post-content .post-container .post-detail .reaction{
+.post-content .post-container .post-detail .delete-post {
   position: absolute;
   right: 0;
   top: 0;
@@ -118,4 +118,37 @@ img.profile-photo-sm {
     color: #8dc63f;
     font-size: 12px;
     margin-left: 20px;
+}
+
+.post-new-comment {
+  display: flex;
+}
+
+.post-new-comment > input {
+  width:98%;
+  border-radius: 5px;
+  border: solid 1px gray;
+  padding: 5px;
+}
+
+.new-post{
+  margin-top:10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color:  #ccc;
+  width: 100%;
+  padding:5px;
+}
+
+.new-post > button {
+  margin-top:10px;
+}
+
+.possible-del {
+  display: flex;
+  align-items: center;
+}
+
+p {
+  text-align: center;
 }

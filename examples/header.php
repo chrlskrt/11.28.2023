@@ -18,7 +18,7 @@
           <?php
             global $currentUser;
             if ($currentUser){
-              echo '<span>' . $currentUser . '</span>
+              echo '<span>' . $currentUser["username"] . '</span>
                     <a href="logout.php" class="btn btn-danger">LOGOUT</a>';
             } else {
               echo '<a href="login.php" class="btn btn-outline-light me-2">Login</a>

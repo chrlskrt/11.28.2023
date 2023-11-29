@@ -15,6 +15,22 @@
     <div class="container">
         <?php
             include_once("api.php");
+            if (isset($_SESSION['user'])) {
+                echo '<div class="new-post">
+                        <form action="create_post.php" method="post">
+                        <div class="new-post">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="title" id="posttitle" placeholder="Post Title" required>
+                            <label for="posttitle">Post Title</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Write something..." id="postbody" name="body" style="height: 100px" required></textarea>
+                            <label for="postbody">Write something...</label>
+                        </div>
+                        <button type="submit" role="button" class="btn btn-primary btn-lg btn-block">Post</button>
+                      </div></form> </div>';
+            } 
+            
             echo getPosts();
         ?>    
     </div>

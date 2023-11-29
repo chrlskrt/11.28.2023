@@ -22,5 +22,29 @@
             "barangay": "Putot",
             "city": "Giants"
         }
+    },
+    {
+        "id": 3,
+        "name": "hu",
+        "username": "hu",
+        "password": "hu1234",
+        "email": "hu@hahha.sd",
+        "address": {
+            "street": "hahah",
+            "barangay": "hahaha",
+            "city": "ahhaha"
+        }
+    },
+    {
+        "id": 4,
+        "name": "hu",
+        "username": "jsdsd",
+        "password": "sidjsid",
+        "email": "hu@hhds.sds",
+        "address": {
+            "street": "isdjsi",
+            "barangay": "sidjsi",
+            "city": "djsid"
+        }
     }
 ]
