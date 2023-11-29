@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Mario Summ",
+        "username": "mariosumm",
+        "password": "12123",
+        "email": "mariosumm@gmail.com",
+        "address": {
+            "street": "Kahilakon",
+            "barangay": "Himi",
+            "city": "Crying Buds"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Emily Laff",
+        "username": "emilylaff",
+        "password": "hala1235",
+        "email": "emilylaff@gmail.com",
+        "address": {
+            "street": "Muboon",
+            "barangay": "Putot",
+            "city": "Giants"
+        }
+    }
+]

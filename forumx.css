@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+#CreateNLog{
+    background-color:aqua;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#CreateNLog > div {
+    width: 300px;
+    padding:10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Satisfy', sans-serif;
+}
+
+#CreateNLog > div > div {
+    text-align: center;
+}
+
+#alertmsg{
+    position: absolute;
+}
+
+#log{
+    color:green;
+}
+
+#log:hover {
+    text-decoration: underline;
+}
+
+#create{
+    color:green;
+}
+
+#create:hover {
+    text-decoration: underline;
+}
+
+#mainsite{
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.forum{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-right: solid slategray 1px;
+}
+
+#userinquiry{
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    /* position: fixed; */
+}
+
+#userops{
+    border-radius: 5px;
+    border: solid slategray 1px;
+    background-color: white;
+    padding:10px;
+    visibility: hidden;
+}
+
+#userops:hover{
+    text-decoration: underline;
+}
+
+#postings{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 15px;
+}
+
+#createPosts{
+    width: 100%;
+    background-color: aliceblue;
+    align-self: center;
+    border:solid 1px slategray;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+#wrefresh{
+    display: flex;
+    justify-content: center;
+    gap:5px;
+}
+
+#wrefresh>h1{
+    font-size: 90px;
+}
+
+
+#refresh{
+    background-color: transparent;
+    border:none;
+    outline: none;
+}
+
+.posts{
+    border: 1px ridge slategray;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color:aliceblue;
+}
+
+.posttext{
+    width: 90%;
+    font-size:x-large;
+}
+
+.date {
+    font-size: small;
+}
+
+.posts > div{
+    margin-bottom: 5px;
+}
+
+.withdel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.handleDel, .handleDelReply{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.replySection{
+    display: flex;
+}
+
+.replySection > div:nth-child(2){
+    display: none;
+    visibility: hidden;
+}
+
+.replySection > div:nth-child(4){
+    display: none;
+    visibility: hidden;
+}
+
+.replyText {
+    width: 98%;
+    border: solid 1px gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.replyText:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.handleReply{
+    border: solid 1px gray;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.replies {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.indivreply{
+    display: flex;
+    border: solid 1px gray;
+    padding: 5px;
+    background-color:rgb(254, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.indivreply > section {
+    display:flex;
+    gap:15px;
+    align-items: baseline;
+}
+
+
+.handleDelReply{
+    background-color: rgb(245, 250, 255);
+}
+
+.replyusers{
+    font-size: x-large;
+    font-weight:500;
+}
+
+.replyreply{
+    font-size: large;
+}

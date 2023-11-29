@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Forum Site</title>
+        <link rel="stylesheet" href="forumx.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+        <script src="forumx.js"></script>
+    </head>
+    <body>
+        <section id="CreateNLog">
+            <div id="CreateNewUser">
+                <h1>Sign Up</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="NewUserFirstName">First Name</label>
+                        <input type="text" class="form-control" id="NewUserFirstName" placeholder="Enter first name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="NewUserLastName">Last Name</label>
+                        <input type="text" class="form-control" id="NewUserLastName" placeholder="Enter last name...">
+                    </div>
+                </form>
+                <button id="createAcc" type="button" class="btn btn-primary btn-lg btn-block">Create Account</button>
+                <div class="goLogIn">
+                    <div>Already have an account?</div>
+                    <div id="log">Log in</div>
+                </div>
+            </div>
+            <div id="LogIn">
+                <h1>Log In</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="LogFirstName">First Name</label>
+                        <input type="text" class="form-control" id="LogFirstName" placeholder="Enter first name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="LogLastName">Last Name</label>
+                        <input type="text" class="form-control" id="LogLastName" placeholder="Enter last name...">
+                    </div>
+                </form>
+                <button id="logAcc" type="button" class="btn btn-primary btn-lg btn-block">Log In</button>
+                <div class="goCreate">
+                    <div>Do not have an account, yet?</div>
+                    <div id="create">Sign Up</div>
+                </div>
+            </div>
+        </section>
+        <section id="mainsite">
+            <section class="forum">
+                <section id="wrefresh">
+                    <h1>Forum</h1>
+                    <button type="button" id="refresh">↻</button>
+                </section>
+                
+                <div id="userinquiry">
+                    <div id="userops">
+                        Log Out
+                    </div>
+                    
+                    <button id="userbttn" type="button" class="btn btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
+                        </svg>
+                        <span id="userhandle"></span>
+                    </button>
+                </div>
+            </section>
+            
+            <section id="postings">
+                <div id="createPosts">
+                    <h3>What do you want to post?</h3>
+            
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" id="newPost" rows="3" placeholder="Write something..."></textarea>
+                        </div>
+                    </form>
+                    <button id="handlePost" type="button" class="btn btn-primary btn-lg">POST</button>
+                </div>
+                <div id="allpost"></div>
+                
+            </section>
+        </section>
+    </body>
+</html>
